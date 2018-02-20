@@ -19,9 +19,21 @@
         }
       }
 
+      class Explanation extends React.Component {
+        render() {
+          return (
+            <p>This is just a test component</p>
+          );
+        }
+      }
+
       ReactDOM.render(
-        <Greeting/>, document.getElementById('app')
-      );
+        <div>
+          <Greeting/>
+          <Explanation/>
+        </div>,
+        document.getElementById('app')
+      )
     </script>
   </body>
 </html>
